@@ -1,396 +1,556 @@
-HX License v1.0
+HX LICENSE v1.0
 
 Copyright © 2026 SARAN SUDHA CHAND MATSA. All rights reserved.
 
-1. Purpose
-
-This license governs the source code, documentation, and other copyrightable materials made available under this license (collectively, the “Software”).
-
-The Software is made publicly available so that individuals may inspect and evaluate the Software, and may submit contributions to the official project, subject to the restrictions and conditions of this license.
-
-The Software is publicly available under the HX License v1.0 and is not licensed under an OSI-approved Open Source License.
+The Software is publicly available under the HX License v1.0. This license is a proprietary, source-available license and is not an OSI-approved Open Source License.
 
 No rights are granted except those expressly provided by this license.
 
----
+1. PURPOSE
 
-2. Copyright and Ownership
+This license governs the source code, object code, documentation, configuration files, schemas, specifications, and other copyrightable materials identified by SARAN SUDHA CHAND MATSA as being distributed under the HX License v1.0 (collectively, the “Software”).
 
-The Software and all original copyrightable materials contained in the Software are owned by SARAN SUDHA CHAND MATSA, except for materials identified as third-party software or otherwise subject to separate rights.
+The Software is made publicly available primarily to permit inspection, evaluation, research, experimentation, personal use, and participation in the official HX project, subject to the rights and restrictions stated in this license.
 
-All rights not expressly granted under this license are reserved by the copyright holder.
+Commercial Use, redistribution, modification, derivative works, commercial deployment, and other activities not expressly permitted by this license require a separate written authorization or Commercial License from SARAN SUDHA CHAND MATSA.
+
+2. COPYRIGHT AND OWNERSHIP
+
+The Software and all original copyrightable materials contained in the Software are owned by SARAN SUDHA CHAND MATSA, except for materials identified as third-party materials or otherwise subject to separate rights.
+
+All rights not expressly granted under this license are reserved.
 
 This license does not transfer ownership of the Software or any intellectual-property rights in the Software.
 
----
+Nothing in this license transfers ownership of trademarks, patents, trade secrets, domain names, or other intellectual property.
 
-3. Definitions
+3. DEFINITIONS
 
-For purposes of this license:
+3.1 “Copyright Holder”
 
-3.1 “Individual”
+“Copyright Holder” means SARAN SUDHA CHAND MATSA and, where applicable, the official HX project or an entity legally authorized by SARAN SUDHA CHAND MATSA to administer the Software.
 
-An “Individual” means a natural person acting solely in a personal, educational, academic, research, experimental, or other genuinely non-commercial capacity and not acting on behalf of an Organization.
+3.2 “Individual”
 
-3.2 “Organization”
+“Individual” means a natural person acting in a genuinely personal, educational, academic, research, experimental, hobbyist, or other non-commercial capacity and not using the Software on behalf of an Organization.
 
-An “Organization” means any company, corporation, partnership, institution, governmental body, nonprofit organization, business, or other legal or commercial entity, together with any person acting on its behalf.
+3.3 “Organization”
 
-3.3 “Commercial Use”
+“Organization” means any company, corporation, partnership, institution, governmental body, nonprofit organization, business, association, or other legal entity.
+
+A natural person acting on behalf of an Organization is considered to be acting as part of that Organization for purposes of this license.
+
+3.4 “Commercial Use”
 
 “Commercial Use” means use of the Software primarily for commercial advantage, monetary compensation, revenue generation, or the operation, development, support, or delivery of a commercial business, product, service, or infrastructure.
 
 Commercial Use includes, without limitation:
 
-* selling or licensing the Software or a derivative of it;
+(a) selling, licensing, sublicensing, leasing, or renting the Software or a Derivative Work;
 
-* incorporating the Software into a commercial product or service;
+(b) incorporating the Software into a commercial product or service;
 
-* using the Software to provide a paid or revenue-generating service;
+(c) using the Software to provide a paid or revenue-generating service;
 
-* offering the Software through a SaaS, cloud, hosted, managed, or infrastructure service;
+(d) offering the Software through a SaaS, cloud, hosted, managed, or infrastructure service;
 
-* using the Software to operate infrastructure or functionality provided to paying customers;
+(e) using the Software to operate infrastructure or functionality provided to paying customers;
 
-* using the Software to develop or operate a competing commercial product or service;
+(f) using the Software to develop or operate a competing commercial product or service;
 
-* distributing a proprietary commercial derivative based substantially on the Software; or
+(g) commercially distributing modified versions of the Software;
 
-* otherwise commercially exploiting the Software or a derivative of it.
+(h) creating a proprietary commercial product substantially incorporating protected portions of the Software; or
 
-3.4 “Derivative Work”
+(i) otherwise commercially exploiting protected portions of the Software.
 
-A “Derivative Work” means a work based upon, incorporating, modifying, adapting, translating, transforming, or otherwise substantially incorporating protected portions of the Software.
+Commercial Use does not include merely viewing publicly available source code or publicly available documentation.
 
-3.5 “Commercial License”
+3.5 “Derivative Work”
 
-A “Commercial License” means a separate written license or agreement issued by SARAN SUDHA CHAND MATSA that expressly authorizes Commercial Use of the Software.
+“Derivative Work” means a work based upon, incorporating, modifying, adapting, translating, transforming, or otherwise reproducing protected portions of the Software in a manner that constitutes a derivative work under applicable copyright law.
+
+A work independently created without copying protected expression from the Software is not made a Derivative Work merely because it implements similar ideas, concepts, algorithms, protocols, interfaces, functionality, or general architectural principles.
 
 3.6 “Improvement”
 
-An “Improvement” means a bug fix, security fix, performance improvement, feature, documentation change, or other substantive change intended to improve the Software. Personal configuration, private deployment files, and changes that do not modify or improve the Software are not Improvements.
+“Improvement” means a bug fix, security fix, performance improvement, feature, documentation change, or other substantive modification to the Software.
 
----
+Personal configuration, deployment-specific configuration, private integration code, and independent software that does not reproduce protected portions of the Software are not Improvements.
 
-4. Permitted Individual Uses
+3.7 “Commercial License”
 
-Subject to the terms of this license, an Individual may:
+“Commercial License” means a separate written agreement issued by the Copyright Holder expressly authorizing Commercial Use or other activities restricted by this license.
 
-* view and inspect the Software;
+3.8 “HX Service”
 
-* submit contributions to the official project through its designated contribution process; and
+“HX Service” means any hosted, managed, cloud, API, network, computational, infrastructure, platform, or other service operated or authorized by the Copyright Holder.
 
-* share observations, feedback, bug reports, and proposed improvements concerning the Software.
+HX Services are governed separately by applicable terms of service, API terms, developer agreements, or other written agreements.
 
-Except as expressly permitted by Section 7, no permission is granted to run, execute, modify, fork, reproduce, redistribute, publish, host, or otherwise use the Software or a Derivative Work.
+3.9 “HX Marks”
 
-These permissions do not transfer ownership of the Software.
+“HX Marks” means the names, trademarks, service marks, logos, symbols, product names, trade names, domain names, and other branding associated with HX or the Copyright Holder.
 
----
+4. LICENSE GRANT
 
-5. Restrictions on Organizations
+Subject to continuous compliance with this license, the Copyright Holder grants an Individual a limited, non-exclusive, non-transferable, revocable license to:
 
-Except pursuant to a separate Commercial License or other written authorization from SARAN SUDHA CHAND MATSA, an Organization, including a nonprofit organization, educational institution, governmental body, or person acting on behalf of any such entity, may not:
+(a) view and inspect the Software;
 
-* access, use, run, execute, inspect, evaluate, reproduce, modify, fork, or distribute the Software;
+(b) download and retain a copy of the Software for personal, educational, academic, research, experimental, or other genuinely non-commercial purposes;
 
-* incorporate the Software into any commercial product or service;
+(c) execute the Software for genuinely non-commercial personal purposes;
 
-* use the Software to operate a commercial service or infrastructure;
+(d) evaluate the Software for the purpose of determining whether to request a Commercial License;
 
-* use the Software in a commercial SaaS, cloud, hosted, managed, or infrastructure offering;
+(e) submit contributions, patches, bug fixes, documentation, and proposed Improvements to the official HX project through its designated contribution process; and
 
-* use the Software to develop or operate a competing commercial product or service;
+(f) use the Software privately for the Individual's own non-commercial projects, subject to Section 7.
 
-* distribute, sell, license, sublicense, lease, rent, or otherwise commercially exploit the Software or any Derivative Work;
+Except as expressly permitted by this license or a separate written authorization, no license is granted to modify, fork, redistribute, sublicense, commercially deploy, commercially exploit, or provide the Software or Derivative Works to third parties.
 
-* create or distribute a proprietary commercial product substantially based on the Software;
+5. ORGANIZATIONAL USE
 
-* make the Software or a Derivative Work available to customers or other third parties as part of a commercial offering; or
+An Organization does not receive a general license to use, execute, modify, fork, redistribute, commercially exploit, or deploy the Software merely because the Software is publicly accessible.
 
-* authorize or facilitate any of the foregoing activities.
+An Organization may:
 
-An Organization may obtain access to the Software for purposes expressly authorized in a separate written agreement with the copyright holder.
+(a) view publicly accessible source code and documentation;
 
----
+(b) evaluate publicly available information for purposes of determining whether to obtain a Commercial License;
 
-6. Prohibited Commercial Activities
+(c) communicate with the Copyright Holder concerning licensing or technical matters; and
 
-Without a Commercial License or separate written authorization, no person or Organization may use, run, execute, modify, fork, reproduce, distribute, publish, host, or commercially exploit the Software or any Derivative Work.
+(d) use the Software where expressly authorized by a Commercial License or other written agreement.
 
-In particular, the following are prohibited:
+An Organization may not use the publicly available Software itself for production, commercial operations, commercial development, internal business operations, customer-facing services, or other organizational purposes unless separately authorized.
 
-* selling access to the Software;
+Nothing in this section prohibits independent software development that does not copy protected portions of the Software.
 
-* selling or licensing a Derivative Work;
+6. COMMERCIAL USE
 
-* incorporating the Software into a paid product;
+Commercial Use requires a Commercial License or other written authorization from the Copyright Holder.
 
-* offering the Software as a hosted or managed service;
+Without such authorization, no person or Organization may:
 
-* using the Software as part of a commercial SaaS platform;
+(a) sell or license the Software;
 
-* using the Software to provide paid computational, engineering, infrastructure, or other services;
+(b) incorporate protected portions of the Software into a paid product or service;
 
-* creating a competing commercial product substantially based on the Software;
+(c) provide the Software as a hosted or managed service;
 
-* redistributing the Software for commercial purposes;
+(d) use the Software to provide paid computational, engineering, financial, infrastructure, data-processing, or other services;
 
-* commercially distributing modified versions of the Software;
+(e) commercially distribute the Software or a Derivative Work;
 
-* sublicensing the Software;
+(f) sublicense the Software;
 
-* removing or intentionally obscuring copyright, license, attribution, or other required notices; and
+(g) operate a competing commercial product substantially incorporating protected portions of the Software;
 
-* using the Software in a manner that falsely suggests that a third-party product or service is an official HX product.
+(h) make the Software available to customers or third parties as part of a commercial offering; or
 
----
+(i) otherwise commercially exploit rights reserved to the Copyright Holder.
 
-7. Personal Service Use
+Commercial Use of an independently created implementation that does not copy protected expression from the Software is not prohibited merely because that implementation provides similar functionality.
 
-Notwithstanding the restrictions in Sections 5 and 6, an Individual may use the Software or an authorized HX-hosted service to operate, power, or support a service, website, application, project, or other activity for the Individual's own use, provided that such use is genuinely non-commercial and does not provide the Software or its underlying hosting, computing, infrastructure, or functionality as a service to third parties.
+7. PERSONAL SERVICE USE
 
-For example, an Individual may:
+An Individual may use the Software to operate their own personal website, application, project, research environment, or other genuinely non-commercial activity.
 
-* host their own personal website;
+An Individual may also use an authorized HX Service for their own genuinely non-commercial purposes where permitted by the applicable HX Service terms.
 
-* operate their own personal application;
+However, an Individual may not use the Software to provide the Software itself, HX infrastructure, hosting, computing resources, or substantially similar functionality to third parties where such activity constitutes Commercial Use or unauthorized public service provision.
 
-* use the Software to power their own non-commercial project;
+Examples of permitted personal use include:
 
-* use HX-hosted infrastructure for their own non-commercial activities; or
+(a) running a personal website;
 
-* provide a non-commercial service for their own personal use.
+(b) operating a private application;
 
-However, an Individual may not:
+(c) conducting personal research;
 
-* offer hosting or infrastructure services to third parties using the Software;
+(d) building a private prototype;
 
-* allow other users to host their websites, applications, or services through the Individual's deployment of the Software;
+(e) experimenting with the Software; and
 
-* resell, sublicense, or otherwise provide HX hosting, computing, infrastructure, or functionality to third parties;
+(f) using the Software for a genuinely non-commercial personal project.
 
-* operate a hosting platform based on the Software;
+Examples of prohibited use without authorization include:
 
-* charge third parties for access to infrastructure or functionality provided by the Software;
+(a) operating a public hosting platform based on the Software;
 
-* create a service whose primary purpose is providing other users with access to the Software or infrastructure based on the Software; or
+(b) selling access to a deployment of the Software;
 
-* otherwise turn the Software into a commercial or public hosting, infrastructure, or platform service.
+(c) providing Software-powered infrastructure to paying customers;
 
-For the avoidance of doubt, personal use of the Software to operate one's own service is permitted where otherwise authorized by this license; operating a service that provides the Software, hosting, infrastructure, or substantially similar functionality to other users is not permitted without separate written authorization or a Commercial License.
+(d) operating a commercial SaaS product based on the Software; or
 
-Nothing in this section grants an Organization permission to use the Software. Organizations remain subject to Sections 5 and 6.
+(e) reselling HX infrastructure or functionality.
 
----
+8. MODIFICATIONS AND FORKS
 
-8. No Modifications or Forks
+Except as expressly permitted by this license or a separate written authorization, no person or Organization may:
 
-No person or Organization may modify, adapt, translate, transform, fork, or create a Derivative Work of the Software, except pursuant to a separate written authorization from SARAN SUDHA CHAND MATSA.
+(a) modify the Software;
 
-No person or Organization may publish, distribute, sell, license, sublicense, host, or otherwise make available any modification, fork, or Derivative Work, whether commercial or non-commercial, without such authorization.
+(b) create a fork of the Software;
 
-An Individual may submit an Improvement to the official project through its designated contribution process, but submission does not grant that Individual permission to use, publish, distribute, or otherwise exploit the Software or any Derivative Work.
+(c) create a Derivative Work;
 
----
+(d) distribute a modified version;
 
-9. Redistribution
+(e) publish a modified version;
 
-No redistribution right is granted under this license. No person or Organization may copy, publish, share, distribute, transmit, sublicense, or otherwise make the Software or a Derivative Work available to any third party, whether for commercial or non-commercial purposes, except pursuant to separate written authorization.
+(f) sublicense a modified version; or
 
-No person may redistribute the Software in a manner that suggests that the Software is an official distribution of HX without written authorization.
+(g) commercially exploit a Derivative Work.
 
----
+An Individual may prepare modifications solely for private non-commercial experimentation or for submission to the official HX project where such activity is otherwise permitted by this license.
 
-10. Contributions
+Submission of a modification to the official HX project does not grant the contributor a general license to redistribute or commercially exploit the Software or the resulting Derivative Work.
 
-Contributions to the official project are welcome.
+This section does not restrict independent implementations that do not reproduce protected portions of the Software.
 
-A contributor represents that they have sufficient rights to submit the contribution.
+9. REDISTRIBUTION
 
-Unless a separate Contributor License Agreement (“CLA”) or contribution agreement applies, submission of a contribution does not transfer copyright ownership of that contribution to SARAN SUDHA CHAND MATSA.
+No redistribution right is granted except as expressly stated in this license or separately authorized in writing.
 
-By submitting a contribution, the contributor grants SARAN SUDHA CHAND MATSA and the official HX project a perpetual, worldwide, irrevocable, royalty-free, non-exclusive license to use, reproduce, prepare Derivative Works of, publicly display, publicly perform, distribute, sublicense, make available, and otherwise exploit the contribution, including in proprietary and commercial HX products and services.
+Without authorization, no person or Organization may:
 
-The contributor may continue to use their original contribution only with prior written permission from SARAN SUDHA CHAND MATSA. This restriction does not transfer ownership of the contribution. It does not grant the contributor any right to use, reproduce, modify, distribute, or exploit the Software or any Derivative Work.
+(a) redistribute the Software;
 
-The contributor must identify any third-party material included in a contribution and must have sufficient rights to grant the license described in this section.
+(b) mirror the Software for the purpose of providing an alternative distribution;
 
-The copyright holder may require a contributor to execute a CLA or other contribution agreement before accepting or incorporating a contribution.
+(c) package the Software for third-party distribution;
 
-The project may reject, modify, or decline to incorporate any contribution at its discretion.
+(d) sell or sublicense copies;
 
----
+(e) distribute modified versions;
 
-11. Third-Party Components
+(f) distribute Derivative Works; or
 
-This license applies only to Software owned or controlled by SARAN SUDHA CHAND MATSA.
+(g) provide the Software as part of a commercial product or service.
 
-Third-party libraries, dependencies, assets, code, models, documentation, and other materials remain subject to their respective licenses and terms.
+Public availability of the Software does not constitute a general redistribution license.
+
+Nothing in this section prohibits ordinary references to the project, links to the official repository, bug reports, discussions, documentation references, or other activities that do not reproduce or redistribute protected portions of the Software.
+
+10. CONTRIBUTIONS
+
+Contributions to the official HX project may be submitted through the designated contribution process.
+
+A contributor represents that:
+
+(a) they have sufficient rights to submit the contribution;
+
+(b) the contribution does not knowingly violate third-party intellectual-property rights;
+
+(c) they are authorized to grant the rights described in this section; and
+
+(d) any third-party materials included in the contribution have been properly identified and are legally usable.
+
+Unless a separate Contributor License Agreement (“CLA”) or contribution agreement applies, a contributor retains ownership of copyright in their original contribution.
+
+By submitting a contribution, the contributor grants the Copyright Holder a perpetual, worldwide, irrevocable, royalty-free, non-exclusive license, with the right to sublicense, to:
+
+(a) reproduce the contribution;
+
+(b) modify and adapt the contribution;
+
+(c) combine the contribution with the Software;
+
+(d) prepare Derivative Works based on the contribution;
+
+(e) distribute the contribution as part of the HX project;
+
+(f) publicly display and perform the contribution where applicable;
+
+(g) incorporate the contribution into proprietary or commercial HX products and services; and
+
+(h) otherwise use and exploit the contribution as part of the HX project.
+
+The contribution license granted above does not by itself grant the contributor any additional rights to the Software.
+
+A separate CLA may replace or supplement this section.
+
+The Copyright Holder may reject, modify, remove, or decline to incorporate any contribution at its discretion.
+
+11. PATENTS
+
+Except for any separate written agreement, no patent license is granted under this license.
+
+The Software may contain or implement technology that is subject to patents or other intellectual-property rights.
 
 Nothing in this license:
 
-* overrides a third-party license;
+(a) grants a patent license;
 
-* removes rights granted by a third-party license; or
+(b) represents that the Software is free of patent claims;
 
-* grants rights in third-party intellectual property that the copyright holder does not possess.
+(c) prevents the Copyright Holder from licensing patents separately; or
+
+(d) grants rights to third-party patents.
+
+Any patent license must be expressly granted in a separate written agreement.
+
+12. INDEPENDENT IMPLEMENTATIONS
+
+This license governs the Software and protected expression contained in it.
+
+This license does not grant the Copyright Holder ownership of independently created ideas, concepts, algorithms, mathematical principles, protocols, methods, interfaces, functionality, or general architectural concepts solely because they are also present in the Software.
+
+An independently developed implementation that does not copy protected expression from the Software is not a Derivative Work merely because it provides similar functionality.
+
+However, this section does not authorize:
+
+(a) copying source code;
+
+(b) copying protected documentation;
+
+(c) reproducing protected expressive elements;
+
+(d) using HX Marks without authorization;
+
+(e) misrepresenting an independent implementation as an official HX product; or
+
+(f) violating any separate patent, trademark, contractual, trade-secret, or other intellectual-property rights.
+
+13. HX SERVICES AND APIs
+
+HX Services are not licensed under this Software license merely because they interact with, depend upon, or expose functionality related to the Software.
+
+Access to an HX Service may require acceptance of separate terms.
+
+API access, hosted services, network services, computational services, and other remote functionality are governed by the applicable HX Service terms.
+
+Using an authorized HX API does not grant a user a license to copy, modify, fork, host, redistribute, or commercially exploit the underlying Software.
+
+Likewise, this Software license does not by itself grant a user unrestricted access to HX Services, APIs, infrastructure, networks, accounts, credentials, or computing resources.
+
+14. THIRD-PARTY COMPONENTS
+
+This license applies only to materials owned or controlled by the Copyright Holder and expressly distributed under this license.
+
+Third-party libraries, dependencies, assets, code, models, datasets, documentation, fonts, tools, and other materials remain subject to their respective licenses and terms.
+
+Nothing in this license:
+
+(a) overrides a third-party license;
+
+(b) removes rights granted by a third-party license;
+
+(c) grants rights in third-party intellectual property that the Copyright Holder does not possess; or
+
+(d) requires third-party materials to be subject to this license.
 
 Where required, applicable third-party license notices shall be provided with the Software.
 
----
+15. TRADEMARKS AND BRANDING
 
-12. Trademarks and Branding
+This license does not grant any right to use HX Marks.
 
-This license does not grant any right to use trademarks, service marks, logos, product names, trade names, domain names, or other branding associated with HX, SARAN SUDHA CHAND MATSA, or related projects.
+No person may use HX Marks in a manner that:
 
-You may not use such branding in a manner that:
+(a) suggests official endorsement;
 
-* suggests official endorsement;
+(b) suggests sponsorship or affiliation;
 
-* suggests sponsorship or affiliation;
+(c) represents an independent fork or implementation as an official HX product;
 
-* represents a fork or derivative as an official HX product;
+(d) causes confusion regarding the origin of a product or service;
 
-* causes confusion regarding the origin of a product or service; or
+(e) falsely suggests that a service is operated by HX; or
 
-* otherwise implies authorization that has not been granted.
+(f) otherwise implies authorization that has not been granted.
 
-Any separate trademark policy published by the copyright holder may impose additional requirements.
+Permitted nominative references to HX for purposes such as identifying compatibility, discussing the project, reporting issues, or accurately describing an independent implementation are not prohibited, provided they do not create a false impression of affiliation or endorsement.
 
----
+A separate trademark policy may impose additional requirements.
 
-13. No Warranty
+16. ATTRIBUTION AND NOTICES
+
+Where the Software is lawfully used under this license, applicable copyright and license notices must not be intentionally removed or obscured.
+
+A user may not falsely claim authorship of the Software or represent the Software as independently created when protected portions were copied from the Software.
+
+This section does not require an independent implementation to reproduce HX branding.
+
+17. SECURITY RESEARCH AND RESPONSIBLE DISCLOSURE
+
+Nothing in this license is intended to prohibit good-faith security research that is otherwise lawful.
+
+Security vulnerabilities should, where reasonably possible, be reported through the official HX security-reporting channel rather than publicly disclosed before the Copyright Holder has had a reasonable opportunity to investigate.
+
+Nothing in this section grants permission to access systems, accounts, infrastructure, networks, or data without authorization.
+
+Security testing of HX Services is subject to the applicable security-testing policy and service terms.
+
+18. NO WARRANTY
 
 THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE.
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER AND CONTRIBUTORS DISCLAIM WARRANTIES INCLUDING, WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, SECURITY, ACCURACY, RELIABILITY, AND AVAILABILITY.
 
-The Software may contain defects, errors, security vulnerabilities, or other limitations.
+THE SOFTWARE MAY CONTAIN DEFECTS, ERRORS, SECURITY VULNERABILITIES, OR OTHER LIMITATIONS.
 
-You are responsible for independently evaluating the Software before using it.
+THE USER IS RESPONSIBLE FOR INDEPENDENTLY EVALUATING THE SOFTWARE BEFORE USE.
 
----
+19. ENGINEERING, FINANCIAL, SAFETY, AND SPECIALIZED-USE DISCLAIMER
 
-14. Engineering and Safety Disclaimer
+The Software may be used for engineering, scientific, computational, financial, technical, autonomous-agent, or other specialized purposes.
 
-The Software may be used for engineering, scientific, computational, technical, or other specialized purposes.
+The Software is not a substitute for qualified professional judgment, independent verification, testing, certification, financial controls, security review, safety analysis, regulatory compliance, or other professional review.
 
-The Software is not a substitute for qualified professional judgment, independent verification, testing, certification, safety analysis, regulatory compliance, or other professional review.
-
-The copyright holder does not warrant that results produced by the Software are accurate, complete, safe, suitable for a particular application, or compliant with any engineering or regulatory standard.
+The Copyright Holder does not warrant that results produced by the Software are accurate, complete, safe, financially suitable, legally compliant, secure, or appropriate for any particular application.
 
 Users are solely responsible for validating outputs and determining whether the Software is suitable for their intended application.
 
----
+Nothing in this license constitutes financial, legal, engineering, medical, investment, accounting, or other professional advice.
 
-15. Limitation of Liability
+20. LIMITATION OF LIABILITY
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SARAN SUDHA CHAND MATSA AND THE CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, BUSINESS, GOODWILL, OR OTHER ECONOMIC LOSS ARISING OUT OF OR RELATING TO THE SOFTWARE OR ITS USE.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SARAN SUDHA CHAND MATSA AND THE CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, DATA, BUSINESS, GOODWILL, OR OTHER ECONOMIC LOSS ARISING OUT OF OR RELATING TO THE SOFTWARE OR ITS USE.
 
-Nothing in this license excludes or limits liability that cannot lawfully be excluded or limited under applicable law.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER'S TOTAL LIABILITY ARISING OUT OF OR RELATING TO THE SOFTWARE SHALL NOT EXCEED THE AMOUNT, IF ANY, ACTUALLY PAID BY THE CLAIMANT TO THE COPYRIGHT HOLDER FOR THE SOFTWARE OR APPLICABLE LICENSE DURING THE TWELVE MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
 
----
+NOTHING IN THIS SECTION EXCLUDES OR LIMITS LIABILITY THAT CANNOT LAWFULLY BE EXCLUDED OR LIMITED.
 
-16. Termination
+21. TERMINATION
 
-The rights granted under this license automatically terminate upon material violation of its terms.
+The rights granted under this license automatically terminate upon a material violation of its terms.
 
-Upon termination, the affected recipient must cease all activities that are no longer authorized under this license and, where legally required, cease distribution and use of the Software.
+Upon termination, the affected recipient must cease activities that are no longer authorized by this license.
+
+Where legally required, the recipient must cease further distribution and use of the Software.
 
 Termination does not affect rights or obligations that by their nature are intended to survive termination.
 
-The copyright holder may pursue any remedies available under applicable law for unauthorized use, copying, distribution, or Commercial Use.
+The Copyright Holder may pursue remedies available under applicable law for unauthorized copying, distribution, modification, Commercial Use, or other infringement.
 
----
+22. COMMERCIAL LICENSING
 
-17. Commercial Licensing
+The Copyright Holder may grant Commercial Licenses or other written permissions at its sole discretion.
 
-SARAN SUDHA CHAND MATSA may, at their sole discretion, grant Commercial Licenses or other written permissions.
+A Commercial License may authorize activities otherwise prohibited by this license, including:
 
-Commercial licensing inquiries may be sent to [licensing@example.com](mailto:licensing@example.com). This placeholder must be replaced with the official HX licensing address before publication.
+(a) commercial deployment;
 
-A Commercial License may authorize activities otherwise prohibited by this license, including commercial distribution, commercial hosting, incorporation into proprietary products, or other Commercial Use.
+(b) commercial distribution;
 
-A Commercial License is subject to the terms separately agreed between the parties.
+(c) commercial hosting;
+
+(d) incorporation into proprietary products;
+
+(e) creation of Derivative Works;
+
+(f) use of HX Software in commercial infrastructure;
+
+(g) API or hosted-service access; or
+
+(h) other specified Commercial Use.
+
+A Commercial License is governed by the separate agreement between the parties.
 
 Nothing in this license:
 
-* requires the copyright holder to grant a Commercial License;
+(a) requires the Copyright Holder to grant a Commercial License;
 
-* creates an obligation to negotiate a Commercial License; or
+(b) creates an obligation to negotiate;
 
-* grants an implied commercial license.
+(c) creates an implied commercial license; or
 
----
+(d) guarantees availability of commercial licensing.
 
-18. Enforcement
+23. ENFORCEMENT
 
-Unauthorized use, copying, modification, distribution, or Commercial Use of the Software may constitute infringement of copyright or other intellectual-property rights and may also give rise to contractual or other legal claims where applicable.
+Unauthorized use, copying, modification, distribution, Commercial Use, or other exploitation of the Software may constitute copyright infringement or violation of other applicable rights.
 
-The copyright holder reserves all rights and remedies available under applicable law.
+The Copyright Holder reserves all rights and remedies available under applicable law.
 
-The decision whether and how to enforce this license is at the discretion of the copyright holder.
+Failure to enforce a provision of this license in one instance does not constitute a waiver of the right to enforce that provision in another instance.
 
-Nothing in this section constitutes a waiver of any right or remedy.
+The decision whether and how to enforce this license remains at the discretion of the Copyright Holder.
 
----
+24. NO IMPLIED RIGHTS
 
-19. No Implied Rights
-
-This license grants only the rights expressly stated in this document.
+This license grants only the rights expressly stated.
 
 No right, license, permission, or authorization shall be implied by:
 
-* the public availability of the repository;
+(a) public availability of the repository;
 
-* access to the source code;
+(b) access to the source code;
 
-* the ability to download or view the Software;
+(c) downloading the Software;
 
-* the acceptance of contributions;
+(d) accepting contributions;
 
-* the publication of documentation; or
+(e) publication of documentation;
 
-* any other conduct of the copyright holder.
+(f) communication with the HX project;
 
-Any activity not expressly permitted by this license is reserved to the copyright holder.
+(g) use of an HX API or service without a separate agreement; or
 
----
+(h) any other conduct of the Copyright Holder.
 
-20. Future Versions
+Any activity not expressly permitted by this license remains reserved to the Copyright Holder, subject to applicable law.
 
-The copyright holder may publish revised versions of this license.
+25. NO TRANSFER OR ASSIGNMENT
 
-Unless expressly stated otherwise, each version of the Software shall remain governed by the license version accompanying that release.
+A recipient may not transfer, assign, sublicense, or otherwise delegate rights granted under this license except with the prior written authorization of the Copyright Holder.
 
-A future version of this license does not automatically modify the license applicable to previously released versions of the Software unless expressly stated.
+This restriction does not prevent rights that cannot lawfully be restricted under applicable law.
 
----
+26. EXPORT, SANCTIONS, AND APPLICABLE LAW
 
-21. Governing Law and Jurisdiction
+Users are responsible for complying with laws applicable to their use of the Software, including applicable export-control, sanctions, data-protection, financial, cybersecurity, and other regulatory requirements.
 
-This license shall be governed by the laws specified in the applicable commercial agreement or other written agreement between the parties.
+Nothing in this license authorizes conduct prohibited by applicable law.
 
-For users or parties not subject to such an agreement, the governing law and jurisdiction shall be determined in accordance with applicable law.
+27. GOVERNING LAW AND JURISDICTION
 
-The copyright holder may specify the applicable governing law and jurisdiction in a later published version of this license.
+This license shall be governed by applicable law.
 
----
+Where legally permissible, disputes concerning this license shall be subject to the jurisdiction of the courts designated by the Copyright Holder in the applicable version of the license or in a separate written agreement.
 
-22. Severability
+For commercial customers, the governing law and jurisdiction may be specified in the applicable Commercial License.
 
-If any provision of this license is determined to be invalid, unlawful, or unenforceable, that provision shall be enforced to the maximum extent permitted by law, and the remaining provisions shall remain in full force and effect.
+Nothing in this section prevents a court or competent authority from applying mandatory law that cannot lawfully be excluded.
 
----
+28. SEVERABILITY
 
-23. Entire License
+If any provision of this license is determined to be invalid, unlawful, or unenforceable, that provision shall be enforced to the maximum extent permitted by law.
+
+If the provision cannot be enforced, it shall be severed to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.
+
+29. ENTIRE LICENSE
 
 This license constitutes the complete license governing the Software with respect to the rights expressly granted herein, except where a separate written agreement applies.
 
-Any separate Commercial License, Contributor License Agreement, or other written agreement may supersede or supplement this license with respect to the parties covered by that agreement.
+A Commercial License, Contributor License Agreement, API Agreement, Terms of Service, or other written agreement may supersede or supplement this license with respect to the parties covered by that agreement.
 
----
+If there is a conflict between this license and a separate written agreement, the separate written agreement controls for the parties and subject matter covered by that agreement.
+
+30. FUTURE VERSIONS
+
+The Copyright Holder may publish revised versions of this license.
+
+Unless expressly stated otherwise, each released version of the Software remains governed by the license version accompanying that release.
+
+A later version of this license does not automatically modify the license applicable to previously released versions unless expressly stated.
+
+31. LICENSE STATUS
+
+The HX License v1.0 is a proprietary, source-available license.
+
+It is not an OSI-approved Open Source License.
+
+The Software should not be described as “Open Source” solely because its source code is publicly accessible.
+
+The terms of this license intentionally reserve certain rights, including commercial use, redistribution, modification, and creation of Derivative Works, unless separately authorized.
+
+32. COPYRIGHT NOTICE
 
 HX License v1.0
 
@@ -398,4 +558,4 @@ Copyright © 2026 SARAN SUDHA CHAND MATSA. All rights reserved.
 
 The Software is publicly available under the HX License v1.0 and is not licensed under an OSI-approved Open Source License.
 
-For commercial licensing inquiries, contact the copyright holder through the official HX contact channel.
+Commercial licensing and other written authorization may be requested through the official HX contact channel.
