@@ -1,0 +1,57 @@
+---
+- name: Deploy HXNet Fabric on Bare Metal
+  hosts: all
+  become: yes
+  vars:
+    hxnet_user: hxnet
+    hxnet_group: hxnet
+    hxnet_dir: /opt/hxnet
+    control_plane_host: "{{ groups['control_plane'][0] }}"
+    postgres_host: "{{ groups['postgres'][0] }}"
+    etcd_hosts: "{{ groups['etcd'] }}"
+    minio_hot_hosts: "{{ groups['minio_hot'] }}"
+    minio_cold_hosts: "{{ groups['minio_cold'] }}"
+    headscale_host: "{{ groups['headscale'][0] }}"
+    
+  roles:
+    - common
+    - docker
+    - postgres
+    - etcd
+    - minio
+    - headscale
+    - control-plane
+    - agent
+    - gateway
+    - identity
+    - monitoring
+
+- name: Configure Control Plane
+  hosts: control_plane
+  become: yes
+  roles:
+    - control-plane
+
+- name: Configure Full Node Agents
+  hosts: full_nodes
+  become: yes
+  roles:
+    - agent-full
+
+- name: Configure Edge Node Agents
+  hosts: edge_nodes
+  become: yes
+  roles:
+    - agent-edge
+
+- name: Configure Gateway Nodes
+  hosts: gateway_nodes
+  become: yes
+  roles:
+    - gateway
+
+- name: Configure Monitoring
+  hosts: monitoring
+  become: yes
+  roles:
+    - monitoring

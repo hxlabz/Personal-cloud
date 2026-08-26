@@ -1,0 +1,23 @@
+[package]
+name = "hxnet-cli"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+hxnet-common = { path = "../common" }
+tokio = { workspace = true, features = ["full"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+uuid = { workspace = true, features = ["serde", "v4"] }
+config = { workspace = true }
+figment = { workspace = true }
+dirs = { workspace = true }
+anyhow = { workspace = true }
+reqwest = { version = "0.12", features = ["json", "native-tls"] }
+qrcode = "0.14"
+base64 = "0.21"
+indicatif = "0.17"

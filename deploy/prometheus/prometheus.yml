@@ -1,0 +1,48 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'hxnet-control'
+    static_configs:
+      - targets: ['control-plane:9090']
+  
+  - job_name: 'hxnet-agent-full'
+    static_configs:
+      - targets: ['agent-full:9091']
+  
+  - job_name: 'hxnet-agent-edge'
+    static_configs:
+      - targets: ['agent-edge:9091']
+  
+  - job_name: 'hxnet-gateway'
+    static_configs:
+      - targets: ['gateway:9092']
+  
+  - job_name: 'hxnet-identity'
+    static_configs:
+      - targets: ['identity:9093']
+  
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres:5432']
+  
+  - job_name: 'etcd'
+    static_configs:
+      - targets: ['etcd:2379']
+  
+  - job_name: 'minio-hot'
+    static_configs:
+      - targets: ['minio-hot:9000']
+  
+  - job_name: 'minio-cold'
+    static_configs:
+      - targets: ['minio-cold:9000']
+  
+  - job_name: 'headscale'
+    static_configs:
+      - targets: ['headscale:9090']
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
