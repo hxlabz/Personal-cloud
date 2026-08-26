@@ -12,6 +12,8 @@ use uuid::Uuid;
 use blake3;
 use bytes::Bytes;
 use std::collections::HashMap;
+use hex;
+use chrono::Utc;
 
 pub struct StorageClient {
     hot_client: Arc<Client>,
@@ -177,14 +179,8 @@ impl StorageClient {
     }
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum StorageTier {
     Hot,
     Cold,
-}
-
-mod hex {
-    pub fn encode(data: &[u8]) -> String {
-        data.iter().map(|b| format!("{:02x}", b)).collect()
-    }
 }

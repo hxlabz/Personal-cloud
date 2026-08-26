@@ -38,3 +38,5 @@ chrono = { version = "0.4", features = ["serde"] }
 qrcode = "0.14"
 base64 = "0.21"
 rcgen = "0.11"
+tracing-subscriber = { workspace = true }
+webauthn-rs = "0.5.5"

@@ -10,15 +10,13 @@ use reqwest::Client as ReqwestClient;
 use axum::{Router, routing::{get, post}, Json, extract::State};
 use tower_http::trace::TraceLayer;
 use metrics_exporter_prometheus::PrometheusBuilder;
-use matter::{MatterClient, Device as MatterDevice};
-use ot::{OpenThreadBorderRouter, ThreadDevice};
 
 mod bridges;
 mod matter;
 mod thread;
 mod ble;
 
-use bridges::{BridgeManager, DeviceBridge};
+use bridges::{BridgeManager, DeviceBridge, BridgedDevice, PairRequest};
 use matter::MatterBridge;
 use thread::ThreadBridge;
 use ble::BleBridge;

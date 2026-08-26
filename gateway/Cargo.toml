@@ -17,7 +17,7 @@ uuid = { workspace = true, features = ["serde", "v4"] }
 mdns-sd = { workspace = true }
 libp2p = { workspace = true, features = ["kad", "mdns", "noise", "yamux", "tcp", "quic", "websocket"] }
 config = { workspace = true }
-reqwest = { version = "0.12", features = ["json", "native-tls"] }
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
 
 dirs = { workspace = true }
 anyhow = { workspace = true }
@@ -31,5 +31,3 @@ opentelemetry = { workspace = true }
 opentelemetry-otlp = { workspace = true }
 metrics = { workspace = true }
 metrics-exporter-prometheus = { workspace = true }
-matter = { version = "0.1.0-alpha4" }
-ot = { version = "0.1" }

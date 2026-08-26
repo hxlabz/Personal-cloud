@@ -42,6 +42,31 @@ pub struct CapabilityDescriptor {
     pub signature: Vec<u8>,
 }
 
+impl CapabilityDescriptor {
+    pub fn sign(&mut self, signing_key: &SigningKey) -> anyhow::Result<()> {
+        let mut buf = Vec::new();
+        buf.extend_from_slice(self.node_id.as_bytes());
+        buf.extend_from_slice(self.version.as_bytes());
+        buf.extend_from_slice(&self.timestamp.to_le_bytes());
+        for (cat_name, cat) in &self.capabilities {
+            buf.extend_from_slice(cat_name.as_bytes());
+            for (cap_name, cap) in &cat.capabilities {
+                buf.extend_from_slice(cap_name.as_bytes());
+                buf.extend_from_slice(&cap.version.as_bytes());
+            }
+        }
+        for (k, v) in &self.endpoints {
+            buf.extend_from_slice(k.as_bytes());
+            buf.extend_from_slice(v.as_bytes());
+        }
+        buf.extend_from_slice(&self.public_key);
+        
+        let sig = signing_key.sign(&buf);
+        self.signature = sig.to_bytes().to_vec();
+        Ok(())
+    }
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct CapabilityCategory {
     pub capabilities: HashMap<String, Capability>,

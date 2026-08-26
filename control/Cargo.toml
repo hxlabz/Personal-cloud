@@ -14,7 +14,7 @@ tracing = { workspace = true }
 tracing-subscriber = { workspace = true, features = ["env-filter", "json"] }
 clap = { workspace = true, features = ["derive"] }
 uuid = { workspace = true, features = ["serde", "v4"] }
-sqlx = { workspace = true, features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono", "json", "migrate"] }
+sqlx = { workspace = true, features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono", "json", "migrate", "tls-rustls"] }
 opa-wasm = { workspace = true }
 
 tonic = { workspace = true }

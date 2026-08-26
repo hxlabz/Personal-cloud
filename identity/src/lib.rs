@@ -78,19 +78,19 @@ impl IdentityService {
     }
     
     async fn generate_ca_cert(&self, _verifying_key: &ed25519_dalek::VerifyingKey) -> Result<String> {
-        let mut params = rcgen::CertificateParams::new(vec!["hxnet-root-ca".into()])?;
-        params.is_ca = rcgen::IsCa::Ca(rcgen::BasicConstraints::Unconstrained);
-        params.key_usages = vec![
-            rcgen::KeyUsagePurpose::KeyCertSign,
-            rcgen::KeyUsagePurpose::CrlSign,
-        ];
+            let mut params = rcgen::CertificateParams::new(vec!["hxnet-root-ca".into()]);
+            params.is_ca = rcgen::IsCa::Ca(rcgen::BasicConstraints::Unconstrained);
+            params.key_usages = vec![
+                rcgen::KeyUsagePurpose::KeyCertSign,
+                rcgen::KeyUsagePurpose::CrlSign,
+            ];
         
-        let key_pair = rcgen::KeyPair::generate()?;
-        params.key_pair = Some(key_pair);
+            let key_pair = rcgen::KeyPair::generate(&rcgen::PKCS_ED25519)?;
+            params.key_pair = Some(key_pair);
         
-        let cert = params.self_signed()?;
-        Ok(cert.pem())
-    }
+            let cert = params.self_signed()?;
+            Ok(cert.pem())
+        }
     
     pub async fn start_registration(&self, user_id: Uuid, device_name: &str) -> Result<RegistrationResponse> {
         let (ccr, reg_state) = self.webauthn.start_passkey_registration(user_id.as_bytes(), device_name, None)?;
@@ -147,29 +147,36 @@ impl IdentityService {
     }
     
     async fn issue_device_cert(&self, credential: &DeviceCredential) -> Result<String> {
-        let root_ca = self.root_ca.read().await;
-        let ca = root_ca.as_ref().ok_or(anyhow::anyhow!("Root CA not initialized"))?;
+            let root_ca = self.root_ca.read().await;
+            let ca = root_ca.as_ref().ok_or(anyhow::anyhow!("Root CA not initialized"))?;
         
-        let mut params = rcgen::CertificateParams::new(vec![format!("hxnet-device-{}", credential.device_id)])?;
-        params.is_ca = rcgen::IsCa::NoCa;
-        params.key_usages = vec![
-            rcgen::KeyUsagePurpose::DigitalSignature,
-            rcgen::KeyUsagePurpose::KeyAgreement,
-        ];
-        params.extended_key_usages = vec![
-            rcgen::ExtendedKeyUsagePurpose::ClientAuth,
-            rcgen::ExtendedKeyUsagePurpose::ServerAuth,
-        ];
+            let mut params = rcgen::CertificateParams::new(vec![format!("hxnet-device-{}", credential.device_id)]);
+            params.is_ca = rcgen::IsCa::NoCa;
+            params.key_usages = vec![
+                rcgen::KeyUsagePurpose::DigitalSignature,
+                rcgen::KeyUsagePurpose::KeyAgreement,
+            ];
+            params.extended_key_usages = vec![
+                rcgen::ExtendedKeyUsagePurpose::ClientAuth,
+                rcgen::ExtendedKeyUsagePurpose::ServerAuth,
+            ];
         
-        let device_key = rcgen::KeyPair::generate()?;
-        params.key_pair = Some(device_key.clone());
+            let device_key = rcgen::KeyPair::generate(&rcgen::PKCS_ED25519)?;
+            params.key_pair = Some(device_key);
         
-        let ca_key = rcgen::KeyPair::from_der(&ca.signing_key.to_bytes())?;
-        let ca_cert = rcgen::Certificate::from_der(&ca.cert_pem)?;
+            let ca_key = rcgen::KeyPair::from_der(&ca.signing_key.to_bytes())?;
+            let mut ca_params = rcgen::CertificateParams::new(vec!["hxnet-root-ca".into()]);
+            ca_params.is_ca = rcgen::IsCa::Ca(rcgen::BasicConstraints::Unconstrained);
+            ca_params.key_usages = vec![
+                rcgen::KeyUsagePurpose::KeyCertSign,
+                rcgen::KeyUsagePurpose::CrlSign,
+            ];
+            ca_params.key_pair = Some(ca_key);
+            let ca_cert = ca_params.self_signed()?;
         
-        let cert = params.signed_by(&device_key, &ca_cert, &ca_key)?;
-        Ok(cert.pem())
-    }
+            let cert = params.signed_by(&ca_key, &ca_cert, &ca_key)?;
+            Ok(cert.pem())
+        }
     
     pub async fn start_authentication(&self, user_id: Uuid) -> Result<AuthenticationResponse> {
         let (rcr, auth_state) = self.webauthn.start_passkey_authentication(user_id.as_bytes())?;
